@@ -1,0 +1,227 @@
+<!-- Cory Johnson/Ryan Muhlbauer -->
+<!DOCTYPE html>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+		
+		<script src="lib/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<title>GGC ePassport</title>	
+	</head>
+	
+	<body>
+		<div data-role="page" id="homePage" style="text-transform: none">
+			<div data-role="header" id="header">
+				<h1>STaRS ePassport</h1>
+			</div>
+			
+			<div data-role="main" class="ui-content" align="center">
+				<img src="img/StarsLogo.PNG" alt="Main Stars Logo" style="height:90%;width:65%;">
+			</div>
+			
+			<div data-role="main"  class="ui-content" align="center">
+
+				<div>
+					<button id="scanBtn" data-icon="camera" data-inline="true">Scan QR Code</button>					
+				</div>
+				<div>
+					<a data-role="button" data-icon="bars" data-inline="true" id="reportBtn" href="#report">Report</a>
+				</div>
+				<div>
+					<a data-role="button"  data-icon="mail" data-inline="true" id="emailIns" href="#send">Email Instructor</a>
+				</div>
+				<div>
+					<a data-role="button" id="surveyBtn" data-inline="true" data-icon="comment" href="https://docs.google.com/forms/d/1UCzgB2WL_NfuxrLpCLOPgpFeOvXp8trsU1sz-nI0ixo/viewform?c=0&w=1" target="_parent">Survey</a>
+				</div>
+				<div>
+					<a data-role="button" data-icon="info" data-inline="true" id="activityBtn" href="#activity">Activities</a>
+				</div>
+				<div>
+					<a data-role="button" data-icon="info" data-inline="true" id="aboutBtn" href="#about">About</a>
+				</div>
+			<br/>
+		<br/>
+			</div>
+			<div data-role="footer" id="footer">
+				<h1>Created by: ITEC 4550</h1>		
+			</div>
+		</div>
+
+		<div data-role="page" id="about" style="text-transform: none">
+			<div data-role="header" id="header">
+				<h1>About ePassport</h1>
+			</div>
+			<div data-role="main" class="ui-content" align="center">
+				<img src="img/StarsLogo.PNG" alt="Picture of GGC STARS logo" style="height:80%; width:60%">
+				<p>
+					Created by: Cory Johnson && Ryan Muhlbauer
+				</p>
+			</div>
+			<div align="center">
+				<p>
+					STaRS is an annual event to showcase your science, mathematics and technology activities and research. 
+					Students and faculty enjoy science demos, games and poster presentations. Graduate and professional schools also attend STaRS to discuss academic programs and admission requirements.
+					 Also, SST clubs host booths and welcome student registrations. Thanks for coming and enjoy participating in STaRS!
+				</p>
+			</div>
+			<br /><br />
+			<div data-role="footer" id="footer">
+				<h1>Created by: ITEC 4550</h1>
+			</div>
+		</div>
+
+		<div data-role="page" id="report" style="text-transform:none">
+			<div data-role="header" id="header">
+				<h1>My Visited Booths</h1>
+			</div>
+				<div id="reportData" data-role="main" class="content">
+					<ul id="reportList"></ul>
+				</div>			
+					<div data-role="footer" id="footer">
+						<h1>Created by: ITEC 4550</h1>
+					</div>
+		</div>
+		
+			<div data-role="page" id="activity" style="text-transform:none">
+				<div data-role="header" id="header">
+					<h1>STaRS ePassport</h1>
+			</div>
+		
+		<h2 align="center">STARS 2016 ACTIVITIES</h2>
+		<h3>BIOLOGY</h3>	
+		<ul>
+			<li>SENSORY PERCEPTION: DO YOU HAVE GOOD TASTE?</li>
+			<li>BROWN HEADED NUTHATCH CONSERVATION</li>
+			<li>BIOLOGY CLUB and TRI-BETA</li>
+			<li>ANTI INFLAMMATORY EFFECTS OF PROGESTERONE - PRESENTATION</li>
+		</ul>
+		
+		<h3>CHEMISTRY</h3>
+		
+		<ul>
+			<li>ACS CHEM CLUB LIQUID NITROGEN AND MORE</li>
+			<li>TEAM TSOI: ACTIVITY BOOTH WITH RED DYE 40</li>
+		</ul>
+		
+		<h3>Exercise Science</h3>
+		
+		<ul>
+			<li>HEALTH AND WELLNESS SYMPOSIUM</li>
+			<li>BEARS/KON MEMBERSHIP DRIVE</li>
+		</ul>
+		
+		<h3>ITEC</h3>
+		
+		<ul>
+			<li>ASSOCIATION FOR INFORMATION TECHNOLOGY</li>
+			<li>FROZEN ADVENTURE</li>
+			<li>MASTER MUSIC MATCHER</li>
+			<li>PYGEM</li>
+			<li>DEVELOPERS AT WORK</li>
+			<li>MEET WIT@GGC</li>
+			<li>VIDEO GAME DEMO WITH VR</li>
+			<li>LIVE DIGITAL COMMERCE DEMOS</li>
+			<li>MATHEMATICS</li>
+			<li>MATHEMATICAL MAGIC</li>
+		</ul>
+		
+		<h3>PHYSICS</h3>
+		
+		<ul>
+			<li>TRAVEL THROUGH TIME WITH ASTRONOMY CLUB</li>
+			<li>AM RADIO PROJECT</li>
+			<li>RUBE GOLDBERG MACHINE</li>
+		</ul>
+		
+		<h3>OTHERS</h3>
+		
+		<ul>
+			<li>PEER SUPPLEMENTAL INSTRUCTION (PSI)</li>
+			<li>GRADUATE SCHOOL FAIR</li>
+			<li>SST TABLE</li>
+			<li>ACCESSIBILITY FOR ALL! : TECH DEMO</li>
+			<li>CAREER CENTER</li>
+			<li>DINING SERVICES</li>
+		</ul>
+		<br />
+		<br />
+		<br />
+		<br />
+		<div data-role="footer" id="footer">
+					<h1>Created by: ITEC 4550</h1>
+			</div>
+			</div>
+			
+			
+		
+		<div data-role="page" id="send" style="text-transform:none">
+			<div data-role="header" id="header">
+				<h1>STaRS ePassport</h1>
+			</div>
+			<div>
+				<h1 align="center">Email Instructor</h1>
+			</div>
+			<div data-role="main class="ui-content>
+				<div>
+				<label for="name">*Email report to:</label>
+				<input name="name" id="toAddress" value="" type="email"/>				
+				</div>
+				<div>
+					<label for"ccAddress">*CC: (Enter Your GGC email Address)</label>
+					<input name="ccAddress" id="cc" value="" type="email"/>
+				</div>				
+				<div>
+					<label for"firstName">*Your First Name: </label>
+					<input name="firstName" id="fName" value="" type="text"/>
+				</div>
+				<div>
+					<label for"lastName">*Your Last Name: </label>
+					<input name="lastName" id="lName" value="" type="text"/>
+				</div>
+				<div>
+					<label for"courseName">*Your Course (i.e. ITEC1001)</label>
+					<input name="courseName" id="course" value="" type="text"/>
+				</div>
+				<div>
+					<label for"sectionNum">*Your Section Number (i.e. 12) </label>
+					<input name="sectionNum" id="section" value="" type="text"/>
+				</div>
+				<a data-role="button" class="ui-content" data-inline="true" id="sendBtn" href="#">Send</a>
+				<a data-role="button" class="ui-content" data-inline="true" href="#homePage">Back</a>
+				<div class="ui-content" align="center">
+					<br /><br />
+					<img src="img/nightggc.PNG" alt="Picture of the student center at night" style="height:auto;width:100%">
+				</div>
+			</div>
+		</div>	
+			
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

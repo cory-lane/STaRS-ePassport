@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.ePassport"
+        },
+        "cordova-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.example.ePassport"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.example.ePassport"
+        },
+        "me.tassoevan.cordova.gohome": {
+            "PACKAGE_NAME": "com.example.ePassport"
+        }
+    },
+    "dependent_plugins": {}
+}
